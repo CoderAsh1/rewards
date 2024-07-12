@@ -26,8 +26,8 @@ let idx = 0;
 btn.addEventListener("click", () => {
     let x = setInterval(() => {
         let y = window.open(`https://www.bing.com/search?q=${random_words[idx]}&form=QBLH&sp=-1&ghc=1&lq=0&pq=hello+worl&sc=11-10&qs=n&sk=&cvid=41DCA8CCE1CF48779C9A0AC58EB1CC69&ghsh=0&ghacc=0&ghpl=`);
-        setTimeout(() => y.close(), 1000);
+        // setTimeout(() => y.close(), 1000);
         idx++;
         if (idx >= random_words.length) clearInterval(x);
-    }, 1500); // Changed to 1 second for safety
+    }, 2000); // Changed to 1 second for safety
 });
